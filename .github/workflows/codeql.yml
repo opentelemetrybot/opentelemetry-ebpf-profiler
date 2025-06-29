@@ -8,8 +8,13 @@ on:
   schedule:
     - cron: "21 6 * * 1"
 
+permissions:
+  contents: read
+
 jobs:
   analyze:
+    permissions:
+      security-events: write
     name: Analyze Go (${{ matrix.target_arch }})
     if: ${{ github.actor != 'dependabot[bot]' && github.repository == 'open-telemetry/opentelemetry-ebpf-profiler' }}
     runs-on: ubuntu-24.04
