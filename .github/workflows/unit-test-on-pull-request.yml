@@ -5,7 +5,8 @@ on:
     branches: [main]
   pull_request:
     branches: ["**"]
-
+permissions:
+  contents: read
 jobs:
   legal:
     name: Check licenses of dependencies
