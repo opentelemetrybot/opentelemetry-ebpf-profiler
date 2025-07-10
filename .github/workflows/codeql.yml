@@ -12,13 +12,11 @@ permissions: read-all
 
 jobs:
   analyze:
+    permissions:
+      security-events: write
     name: Analyze Go (${{ matrix.target_arch }})
     if: ${{ github.actor != 'dependabot[bot]' && github.repository == 'open-telemetry/opentelemetry-ebpf-profiler' }}
     runs-on: ubuntu-24.04
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
     strategy:
       matrix:
         target_arch: [amd64, arm64]
