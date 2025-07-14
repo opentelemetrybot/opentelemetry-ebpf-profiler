@@ -1,0 +1,70 @@
+name: Feature request
+description: Suggest an idea for the OpenTelemetry eBPF profiler
+labels: ["enhancement", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit a feature request! Please make sure to fill out the entire form below, providing as much context as you can to help us understand your request.
+
+        Before filing a feature request, please be sure you have searched through [existing feature requests](https://github.com/open-telemetry/opentelemetry-ebpf-profiler/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Aenhancement) to see if a similar request already exists.
+
+  - type: textarea
+    attributes:
+      label: Is your feature request related to a problem? Please describe.
+      description: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+      placeholder: I'm always frustrated when [...]
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+
+  - type: dropdown
+    attributes:
+      label: Feature category
+      description: What category does this feature request fall into?
+      options:
+        - Performance improvement
+        - New language support
+        - New platform support
+        - Configuration options
+        - Output format
+        - Integration
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Use case
+      description: Please describe your use case and why this feature would be beneficial.
+      placeholder: |
+        # Example use case:
+        # I want to profile applications running on ARM64 processors...
+        # This would help me...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+
+  - type: dropdown
+    attributes:
+      label: Tip
+      description: This element is static, used to render a helpful sub-heading for end-users and community members to help prioritize issues. Please leave as is.
+      options:
+        - <sub>[React](https://github.blog/news-insights/product-news/add-reactions-to-pull-requests-issues-and-comments/) with 👍 to help prioritize this issue. Please use comments to provide useful context, avoiding `+1` or `me too`, to help us triage it. Learn more [here](https://opentelemetry.io/community/end-user/issue-participation/).</sub>
+      default: 0
